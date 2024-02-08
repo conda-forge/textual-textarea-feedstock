@@ -5,5 +5,5 @@ conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
 bot:
-  inspect: update-grayskull
+  inspection: update-grayskull
   automerge: true
