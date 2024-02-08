@@ -1,5 +1,5 @@
 {% set name = "textual-textarea" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textual_textarea-{{ version }}.tar.gz
-  sha256: ef595db0a6619acabecce9210e11e8be68d63bfa2b578c4a5156bcb7b32ee9b5
+  sha256: dcba95eaa2a8a57fd13ce535ca7ce735e887cea5eb34bf6d0f96cd990baf151e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
