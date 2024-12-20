@@ -1,13 +1,13 @@
 {% set name = "textual-textarea" %}
-{% set version = "0.14.4" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textual_textarea-{{ version }}.tar.gz
-  sha256: 560489179b19426b8546b8521750acde22f57021b3afc08b0643557048fb7315
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/textual_textarea-{{ version }}.tar.gz
+  sha256: 1343604a4dc3bac0337c58d926a02ddcf451956fb12532a3d5ade9219905f426
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8.0
-    - textual >=0.72
+    - textual >=0.89.1,<2.0
     - pyperclip >=1.9.0,<2.0.0
 
 test:
