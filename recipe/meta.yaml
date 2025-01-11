@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - poetry-core
     - pip
   run:
-    - python >=3.8.0
+    - python >={{ python_min }}
     - textual >=0.89.1,<2.0
     - pyperclip >=1.9.0,<2.0.0
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/tconbeer/textual-textarea
