@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - hatchling
     - pip
   run:
@@ -32,14 +32,9 @@ requirements:
 
 tests:
   - python:
+      python_version: ${{ python_min }}.*
       imports:
         - textual_textarea
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}
-    script:
-      - pip check
 
 about:
   summary: A text area (multi-line input) with syntax highlighting for Textual
