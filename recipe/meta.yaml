@@ -1,5 +1,5 @@
 {% set name = "textual-textarea" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/textual_textarea-{{ version }}.tar.gz
-  sha256: 49ffc5f232931043bff3f474892f9e8f347b27ddde4b44a51747ca883408c506
+  sha256: e41f32b1e8f2351a5422ab49b3ad13a2f07a7ff944f8dd714ac30008d045eecd
 
 build:
   noarch: python
