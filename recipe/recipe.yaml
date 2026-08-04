@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual-textarea
-  version: 0.17.2
+  version: 0.17.3
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual_textarea-${{ version }}.tar.gz
-  sha256: 84bb2bfe545db70071914802e808dc411c16c21e7744adbcfc381f1390dd2c6b
+  sha256: be27de85017540c75244ca2459d7046c74b479ae45538b5c178623c0845e06d0
 
 build:
   number: 0
@@ -23,13 +23,9 @@ requirements:
     - hatchling
     - pip
   run:
-    - tree-sitter-python ==0.25.0
-    - tree-sitter-sql ==0.3.7
-    - tree_sitter ==0.25.2
     - python >=${{ python_min }}
     - textual >=6.4.0,<7
     - pyperclip >=1.9.0,<2
-
 tests:
   - python:
       python_version: ${{ python_min }}.*
