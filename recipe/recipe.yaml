@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual-textarea
-  version: 0.17.3
+  version: 0.18.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual_textarea-${{ version }}.tar.gz
-  sha256: be27de85017540c75244ca2459d7046c74b479ae45538b5c178623c0845e06d0
+  sha256: 834bcac8852c734dc8e5e5684d6d968e2dda0d0bf5d9cbf5a0c2e6b80a550df9
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - textual >=6.4.0,<7
+    - textual >=7.3.0,<9
     - pyperclip >=1.9.0,<2
 tests:
   - python:
