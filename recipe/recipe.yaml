@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual-textarea
-  version: "0.18.1"
+  version: "0.18.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual_textarea-${{ version }}.tar.gz
-  sha256: 9db53da7659883cd905e66eabae11943c5b2e3a7530873ff85ee35d4bc3d928d
+  sha256: 55890c62e270dd6f4a8988e0cfc54120a05022eead82c665095dd2be14bf17a9
 
 build:
   number: 0
